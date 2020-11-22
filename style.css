@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.not_select {
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;    
+    -khtml-user-select: none;     
+    -moz-user-select: none;       
+    -ms-user-select: none;        
+    user-select: none; 
+}
+
+h1 {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 35pt;
+    margin: 30px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bttn_container {
+    background-color: white;
+    border: solid 20px black;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#bttn_container button {
+    margin: 7px;
+    background-color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 350ms;
+    border: solid 5px black;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 50pt;
+    width: 135px ;
+    height: 135px ; 
+}
+
+#bttn_container button:hover {
+    background-color: white;
+    border: solid 5px black;
+    color: black;
+}
+
+#ganhou_tela_preta {
+    position: absolute;
+    color: white;
+    width: 460px;
+    height: 460px;
+    background-color: black;
+    opacity: 70%;
+    transition: 500ms;
+}
+
+#ganhou_text {
+    transition: 500ms;
+    position: absolute;
+    color: white;
+    z-index: 1000;
+    line-height: 80px;
+    font-size: 40pt;
+}
